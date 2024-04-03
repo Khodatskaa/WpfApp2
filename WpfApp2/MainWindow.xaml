@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+        <TextBox x:Name="ArrayTextBox" Grid.Row="0" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10"/>
+        <TextBox x:Name="ValueTextBox" Grid.Row="1" Margin="10"/>
+        <Button Content="Add" Click="AddButton_Click" Grid.Row="1" HorizontalAlignment="Right" Margin="10"/>
+        <Button Content="Load" Click="LoadButton_Click" Grid.Row="3" HorizontalAlignment="Left" Margin="10"/>
+        <Button Content="Save to File" Click="SaveButton_Click" Grid.Row="3" HorizontalAlignment="Right" Margin="10"/>
     </Grid>
 </Window>
