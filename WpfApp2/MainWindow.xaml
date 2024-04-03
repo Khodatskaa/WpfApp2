@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+        <Button x:Name="btnSavePrimes" Content="Save Primes" Click="btnSavePrimes_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnSaveFibonacci" Content="Save Fibonacci" Click="btnSaveFibonacci_Click" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="lblPrimesCount" Content="Primes Count: " Grid.Row="1" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblFibonacciCount" Content="Fibonacci Count: " Grid.Row="2" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Grid>
 </Window>
