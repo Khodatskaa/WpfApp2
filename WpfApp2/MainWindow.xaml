@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Content="File Path:" Grid.Row="0" Margin="10"/>
+        <TextBox x:Name="txtFilePath" Grid.Row="0" Margin="120,5,10,5"/>
+        <Button x:Name="btnFlip" Content="Flip Content" Click="btnFlip_Click" Grid.Row="1" Margin="10"/>
     </Grid>
 </Window>
