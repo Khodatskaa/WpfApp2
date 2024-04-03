@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+        <Label Content="Word to Search:" Grid.Row="0" Margin="10"/>
+        <TextBox x:Name="txtWordToSearch" Grid.Row="0" Margin="150,5,10,5"/>
+
+        <Label Content="Word to Replace with:" Grid.Row="1" Margin="10"/>
+        <TextBox x:Name="txtWordToReplace" Grid.Row="1" Margin="150,5,10,5"/>
+
+        <Button x:Name="btnReplace" Content="Replace" Click="btnReplace_Click" Grid.Row="2" Margin="30"/>
+
+        <Label x:Name="lblStatistics" Grid.Row="3" Margin="10"/>
     </Grid>
 </Window>
