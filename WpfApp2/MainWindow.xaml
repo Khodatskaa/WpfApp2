@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <Button Content="Generate Integers" Click="GenerateIntegers_Click" HorizontalAlignment="Center" Margin="5" Grid.Row="0"/>
+        <Label x:Name="EvenCountLabel" Content="Even Count: " Grid.Row="1" Margin="5"/>
+        <Label x:Name="OddCountLabel" Content="Odd Count: " Grid.Row="2" Margin="5"/>
+        <Button Content="Display Statistics" Click="DisplayStatistics_Click" HorizontalAlignment="Center" Margin="5" Grid.Row="3"/>
+        <TextBox x:Name="StatisticsTextBox" Grid.Row="4" Margin="5" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" IsReadOnly="True"/>
     </Grid>
 </Window>
