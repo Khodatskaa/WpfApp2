@@ -30,7 +30,7 @@ namespace WpfApp2
 
             for (int i = 0; i < NumberOfIntegers; i++)
             {
-                int num = random.Next(2, 1000); // Random integer between 2 and 1000
+                int num = random.Next(2, 1000); 
                 if (IsPrime(num))
                     primes.Add(num);
                 if (IsFibonacci(num))
