@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+        <Label Content="File Path:" Grid.Row="0" HorizontalAlignment="Left" Margin="10"/>
+        <TextBox x:Name="FilePathTextBox" Grid.Row="0" Margin="100,5,10,5"/>
+
+        <Label Content="File Content:" Grid.Row="1" HorizontalAlignment="Left" Margin="10"/>
+        <TextBox x:Name="FileContentTextBox" Grid.Row="1" Margin="100,5,10,5"/>
+
+        <Button Content="Create File" Click="CreateFileButton_Click" Grid.Row="2" HorizontalAlignment="Left" Margin="10"/>
+
+        <Label Content="Search Word:" Grid.Row="3" HorizontalAlignment="Left" Margin="10"/>
+        <TextBox x:Name="SearchWordTextBox" Grid.Row="3" Margin="100,5,10,5"/>
+
+        <Button Content="Search" Click="SearchButton_Click" Grid.Row="4" HorizontalAlignment="Left" Margin="10"/>
     </Grid>
 </Window>
